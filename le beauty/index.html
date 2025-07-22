@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Le Beauté - Beauty Salon</title>
+  <link rel="stylesheet" href="beauty.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">le beauté</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#specialists">Specialists</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <i class="bi bi-search"></i>
+        <i class="bi bi-cart3"></i>
+        <i class="bi bi-person"></i>
+        <div class="services-dropdown">
+          <button class="services-btn">
+            <i class="bi bi-list"></i>
+            Services & Prices
+          </button>
+          <div class="dropdown-content">
+            <div class="dropdown-item" data-service="hairdresser">
+              <i class="bi bi-scissors"></i>
+              <span>Hairdresser</span>
+            </div>
+            <div class="dropdown-item" data-service="manicure">
+              <i class="bi bi-hand-index"></i>
+              <span>Manicure & Pedicure</span>
+            </div>
+            <div class="dropdown-item" data-service="massage">
+              <i class="bi bi-heart-pulse"></i>
+              <span>Massages</span>
+            </div>
+            <div class="dropdown-item" data-service="skincare">
+              <i class="bi bi-droplet"></i>
+              <span>Skin Care</span>
+            </div>
+            <div class="dropdown-item" data-service="consultation">
+              <i class="bi bi-chat-dots"></i>
+              <span>Consultation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="fade-in">LE BEAUTÉ<br><span class="accent">JUST FOR YOU</span></h1>
+      <p class="fade-in delay-1">SCROLL DOWN FOR SOME MAGIC.</p>
+      <div class="hero-buttons fade-in delay-2">
+        <a href="#services" class="btn btn-primary">Our Services</a>
+        <a href="#contact" class="btn btn-secondary">Book Now</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" alt="Beauty Model">
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="1500">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="500">0</div>
+          <div class="stat-label">Beauty Treatments</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="50">0</div>
+          <div class="stat-label">Awards Won</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="10">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>BEAUTY LABORATORY</h2>
+        <h3>Prices and services we offer</h3>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-scissors"></i>
+          </div>
+          <h4>Hairdresser</h4>
+          <p>Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla:</p>
+          <ul class="service-prices">
+            <li><span class="price">$20</span> Long hairstyle</li>
+            <li><span class="price">$25</span> Medium hairstyle</li>
+            <li><span class="price">$46</span> Regular coloring</li>
+            <li><span class="price">$50</span> Ombre coloring</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-hand-index"></i>
+          </div>
+          <h4>Manicure & Pedicure</h4>
+          <p>Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla.</p>
+          <ul class="service-prices">
+            <li><span class="price">$10</span> French style</li>
+            <li><span class="price">$20</span> Gelish with accents</li>
+            <li><span class="price">$30</span> Regular coloring</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-heart-pulse"></i>
+          </div>
+          <h4>Massages</h4>
+          <p>Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla.</p>
+          <ul class="service-prices">
+            <li><span class="price">$20</span> Arms and legs</li>
+            <li><span class="price">$20</span> Face massage</li>
+            <li><span class="price">$30</span> Full body</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-droplet"></i>
+          </div>
+          <h4>Skin Care</h4>
+          <p>Proin sed tristique metus, et vehicula leo. Nunc consequat mi eget nulla tempus, ut eleifend justo mollis.</p>
+          <ul class="service-prices">
+            <li><span class="price">$35</span> Facial treatment</li>
+            <li><span class="price">$45</span> Deep cleansing</li>
+            <li><span class="price">$55</span> Anti-aging treatment</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-chat-dots"></i>
+          </div>
+          <h4>Consultation</h4>
+          <p>Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla.</p>
+          <ul class="service-prices">
+            <li><span class="price">$15</span> Initial consultation</li>
+            <li><span class="price">$25</span> Style consultation</li>
+            <li><span class="price">$35</span> Full beauty assessment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialists Section -->
+  <section id="specialists" class="specialists-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our wonderful specialists will take care of you</h2>
+      </div>
+      
+      <div class="specialists-grid">
+        <div class="specialist-card">
+          <div class="specialist-image">
+            <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Natalia Lead">
+          </div>
+          <div class="specialist-info">
+            <h3>NATALIA LEAD</h3>
+            <p>Amazing hairdresser</p>
+            <div class="specialist-social">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="specialist-image">
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Amanda Feder">
+          </div>
+          <div class="specialist-info">
+            <h3>AMANDA FEDER</h3>
+            <p>Genius make-up artist</p>
+            <div class="specialist-social">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="specialist-image">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Lisa Bordegamet">
+          </div>
+          <div class="specialist-info">
+            <h3>LISA BORDEGAMET</h3>
+            <p>Master masseuse</p>
+            <div class="specialist-social">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Few Quotes</h2>
+        <h3>from our clients</h3>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <i class="bi bi-quote"></i>
+          </div>
+          <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet fermentum accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+          <div class="testimonial-author">
+            <h4>Katy Henington</h4>
+            <span>Regular Client</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <i class="bi bi-quote"></i>
+          </div>
+          <p class="testimonial-text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent in velit vehicula, iaculis tortor eu, placerat elit. Aenean iaculis nulla nec condimentum pulvinar.</p>
+          <div class="testimonial-author">
+            <h4>Philip Jason</h4>
+            <span>VIP Client</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <i class="bi bi-quote"></i>
+          </div>
+          <p class="testimonial-text">Morbi non nulla consequat, dictum massa nec, euismod sapien. Duis sit amet euismod massa. Vivamus luctus tincidunt metus, ut condimentum ligula molestie sit amet.</p>
+          <div class="testimonial-author">
+            <h4>Sarah Johnson</h4>
+            <span>Loyal Customer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="shop-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>MEET YOUR NEEDS</h2>
+        <h3>You can order our products at home and we will be happy to deliver them to you</h3>
+        <a href="#" class="btn btn-primary">SHOP NOW</a>
+      </div>
+      
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Eye Mask">
+          </div>
+          <div class="product-info">
+            <h4>Le BeautÉ relaxing eye mask with Aloe Vera 120ml</h4>
+            <div class="product-price">
+              <span class="price">$24.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Face Mask">
+          </div>
+          <div class="product-info">
+            <h4>Le BeautÉ scrubbing face mask with Jojoba Oil 150ml</h4>
+            <div class="product-price">
+              <span class="price">$29.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Serum">
+          </div>
+          <div class="product-info">
+            <h4>Le BeautÉ anti-aging serum with Vitamin C 50ml</h4>
+            <div class="product-price">
+              <span class="price">$39.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Moisturizer">
+          </div>
+          <div class="product-info">
+            <h4>Le BeautÉ hydrating moisturizer with Hyaluronic Acid 100ml</h4>
+            <div class="product-price">
+              <span class="price">$34.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Beauty Center</h2>
+        <h3>where you can feel like home</h3>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" alt="Salon Interior">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Beauty Products">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Stylist at Work">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Makeup Artist">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Spa Treatment">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Beauty Products">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Articles</h2>
+        <h3>that you could find interesting</h3>
+      </div>
+      
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hair Products">
+          </div>
+          <div class="blog-content">
+            <h4>How To Choose The Best Hair Products</h4>
+            <p class="blog-meta">by Le Beauté • May 6, 2024</p>
+            <p class="blog-excerpt">Morbi non nulla consequat, dictum massa nec, euismod sapien. Duis sit amet euismod massa. Vivamus luctus tincidunt metus, ut condimentum ligula molestie sit amet.</p>
+            <div class="blog-tags">
+              <span class="tag">Tips & tricks</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Coconut Oil">
+          </div>
+          <div class="blog-content">
+            <h4>Coconut Oil Magic Uses</h4>
+            <p class="blog-meta">by Le Beauté • May 6, 2024</p>
+            <p class="blog-excerpt">Duis scelerisque venenatis imperdiet. Phasellus iaculis odio in orci placerat, sit amet faucibus libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="blog-tags">
+              <span class="tag">Tips & tricks</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Milk Procedures">
+          </div>
+          <div class="blog-content">
+            <h4>Milk Procedures For Better Skin</h4>
+            <p class="blog-meta">by Le Beauté • May 6, 2024</p>
+            <p class="blog-excerpt">Mauris sed dolor in massa maximus mattis id at velit. Morbi molestie nisl hendrerit eleifend commodo. Vivamus porttitor, urna et sollicitudin dapibus.</p>
+            <div class="blog-tags">
+              <span class="tag">Beauty</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Glitter Trend">
+          </div>
+          <div class="blog-content">
+            <h4>Glitter Is The New Trend</h4>
+            <p class="blog-meta">by Le Beauté • May 6, 2024</p>
+            <p class="blog-excerpt">Morbi non nulla consequat, dictum massa nec, euismod sapien. Duis sit amet euismod massa. Vivamus luctus tincidunt metus, ut condimentum ligula molestie sit amet.</p>
+            <div class="blog-tags">
+              <span class="tag">Inspiration</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="section-header">
+            <h2>Feel free to contact us</h2>
+            <h3>Or fill our contact form online</h3>
+          </div>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <div>
+                <h4>Postal Address:</h4>
+                <p>Barona iela 40, Jurmala</p>
+                <h4>Salon:</h4>
+                <p>Hercoga Jekaba iela 2, Jurmala</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="bi bi-telephone"></i>
+              <div>
+                <h4>Business Phone:</h4>
+                <p>+1 844 295 0715</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="bi bi-envelope"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>info@lebeaute.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <select name="service" required>
+                <option value="">Select Service</option>
+                <option value="hairdresser">Hairdresser</option>
+                <option value="manicure">Manicure & Pedicure</option>
+                <option value="massage">Massages</option>
+                <option value="skincare">Skin Care</option>
+                <option value="consultation">Consultation</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="Your Phone">
+            </div>
+            
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Le Beauté</h3>
+          <p>Your beauty journey starts here. We provide the highest quality beauty services and products to help you look and feel your best.</p>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Hairdresser</a></li>
+            <li><a href="#">Manicure & Pedicure</a></li>
+            <li><a href="#">Massages</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Consultation</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#specialists">Specialists</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p><i class="bi bi-geo-alt"></i> Barona iela 40, Jurmala</p>
+          <p><i class="bi bi-telephone"></i> +1 844 295 0715</p>
+          <p><i class="bi bi-envelope"></i> info@lebeaute.com</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Le Beauté. All rights reserved. | WordPress Theme built by Shufflehound.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Services Modal -->
+  <div id="servicesModal" class="services-modal">
+    <div class="modal-background">
+      <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" alt="Background">
+    </div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Service Details</h2>
+        <button class="close-modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="service-details">
+          <div class="service-icon-large">
+            <i id="modalIcon" class="bi bi-scissors"></i>
+          </div>
+          <p id="modalDescription">Service description will appear here.</p>
+          <div class="pricing-list">
+            <h3>Pricing</h3>
+            <ul id="modalPricing">
+              <!-- Pricing items will be populated by JavaScript -->
+            </ul>
+          </div>
+          <div class="modal-actions">
+            <button class="btn btn-primary book-service">Book This Service</button>
+            <button class="btn btn-secondary close-modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="beauty.js"></script>
+
+  <!-- Right-aligned Toolbar -->
+  <div class="right-toolbar">
+    <button class="toolbar-btn"><i class="bi bi-layers"></i></button>
+    <button class="toolbar-btn"><i class="bi bi-eyeglasses"></i></button>
+    <button class="toolbar-btn"><i class="bi bi-bag"></i></button>
+    <button class="toolbar-btn"><i class="bi bi-question-circle"></i></button>
+    <button class="toolbar-btn"><i class="bi bi-globe"></i></button>
+    <button class="toolbar-btn"><i class="bi bi-envelope"></i></button>
+    <button class="toolbar-btn go-top"><i class="bi bi-chevron-up"></i></button>
+  </div>
+
+</body>
+</html>
